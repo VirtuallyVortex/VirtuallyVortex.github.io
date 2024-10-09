@@ -3,173 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn HTML</title>
+    <title>Welcome to Vortex</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        code {
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
-            padding: 2px 4px;
-            border-radius: 4px;
         }
-        pre {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 4px;
-            overflow-x: auto;
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <h1>Learn HTML</h1>
-    <p>HTML (HyperText Markup Language) is the standard language for creating web pages. Below are some basic HTML elements:</p>
-    
-    <h2>1. Basic Structure</h2>
-    <p>Every HTML document starts with a <code>&lt;!DOCTYPE html&gt;</code> declaration, followed by the <code>&lt;html&gt;</code> element:</p>
-    <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;Page Title&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;This is a Heading&lt;/h1&gt;
-    &lt;p&gt;This is a paragraph.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-    <p>The <code>&lt;!DOCTYPE html&gt;</code> declaration defines the document type and version of HTML. The <code>&lt;html&gt;</code> element is the root element of an HTML page. The <code>&lt;head&gt;</code> element contains meta-information about the document, and the <code>&lt;body&gt;</code> element contains the content of the document.</p>
-    
-    <h2>2. Headings</h2>
-    <p>HTML headings are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags:</p>
-    <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
-&lt;h2&gt;Heading 2&lt;/h2&gt;
-&lt;h3&gt;Heading 3&lt;/h3&gt;
-&lt;h4&gt;Heading 4&lt;/h4&gt;
-&lt;h5&gt;Heading 5&lt;/h5&gt;
-&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
-    <p><code>&lt;h1&gt;</code> defines the most important heading, and <code>&lt;h6&gt;</code> defines the least important heading.</p>
-    
-    <h2>3. Paragraphs</h2>
-    <p>Paragraphs are defined with the <code>&lt;p&gt;</code> tag:</p>
-    <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
-    
-    <h2>4. Links</h2>
-    <p>Links are defined with the <code>&lt;a&gt;</code> tag:</p>
-    <pre><code>&lt;a href="https://www.example.com"&gt;This is a link&lt;/a&gt;</code></pre>
-    <p>The <code>href</code> attribute specifies the URL of the page the link goes to.</p>
-    
-    <h2>5. Images</h2>
-    <p>Images are defined with the <code>&lt;img&gt;</code> tag:</p>
-    <pre><code>&lt;img src="image.jpg" alt="Description of image"&gt;</code></pre>
-    <p>The <code>src</code> attribute specifies the path to the image, and the <code>alt</code> attribute provides an alternative text for the image.</p>
-    
-    <h2>6. Lists</h2>
-    <p>HTML supports ordered and unordered lists:</p>
-    <pre><code>&lt;ul&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
-    &lt;li&gt;Item 3&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-    &lt;li&gt;First item&lt;/li&gt;
-    &lt;li&gt;Second item&lt;/li&gt;
-    &lt;li&gt;Third item&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-    <p><code>&lt;ul&gt;</code> defines an unordered list, and <code>&lt;ol&gt;</code> defines an ordered list. List items are defined with the <code>&lt;li&gt;</code> tag.</p>
-    
-    <h2>7. Tables</h2>
-    <p>Tables are defined with the <code>&lt;table&gt;</code> tag:</p>
-    <pre><code>&lt;table&gt;
-    &lt;tr&gt;
-        &lt;th&gt;Header 1&lt;/th&gt;
-        &lt;th&gt;Header 2&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Data 1&lt;/td&gt;
-        &lt;td&gt;Data 2&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;</code></pre>
-    <p><code>&lt;tr&gt;</code> defines a table row, <code>&lt;th&gt;</code> defines a table header, and <code>&lt;td&gt;</code> defines a table cell.</p>
-    
-    <h2>8. Forms</h2>
-    <p>Forms are used to collect user input:</p>
-    <pre><code>&lt;form action="/submit" method="post"&gt;
-    &lt;label for="name"&gt;Name:&lt;/label&gt;
-    &lt;input type="text" id="name" name="name"&gt;
-    &lt;br&gt;
-    &lt;label for="email"&gt;Email:&lt;/label&gt;
-    &lt;input type="email" id="email" name="email"&gt;
-    &lt;br&gt;
-    &lt;input type="submit" value="Submit"&gt;
-&lt;/form&gt;</code></pre>
-    <p>The <code>&lt;form&gt;</code> element defines a form, and the <code>action</code> attribute specifies where to send the form data when submitted. The <code>method</code> attribute specifies the HTTP method to use when sending form data.</p>
-    
-    <h2>9. Semantic Elements</h2>
-    <p>HTML5 introduced semantic elements to define different parts of a web page:</p>
-    <pre><code>&lt;header&gt;Header content&lt;/header&gt;
-&lt;nav&gt;Navigation links&lt;/nav&gt;
-&lt;main&gt;Main content&lt;/main&gt;
-&lt;footer&gt;Footer content&lt;/footer&gt;</code></pre>
-    <p>These elements provide meaning to the structure of the web page, making it easier to read and maintain.</p>
-    
-    <h2>10. Audio and Video</h2>
-    <p>HTML5 also introduced elements for embedding audio and video:</p>
-    <pre><code>&lt;audio controls&gt;
-    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
-    Your browser does not support the audio element.
-&lt;/audio&gt;
-
-&lt;video controls&gt;
-    &lt;source src="video.mp4" type="video/mp4"&gt;
-    Your browser does not support the video element.
-&lt;/video&gt;</code></pre>
-    <p>The <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements allow you to embed media files with built-in controls for play, pause, and volume.</p>
-    
-    <h2>11. Inline Frames</h2>
-    <p>Inline frames (<code>&lt;iframe&gt;</code>) are used to embed another document within the current HTML document:</p>
-    <pre><code>&lt;iframe src="https://www.example.com" width="600" height="400"&gt;
-    &lt;/iframe&gt;</code></pre>
-    <p>The <code>src</code> attribute specifies the URL of the document to embed.</p>
-    
-    <h2>12. Meta Tags</h2>
-    <p>Meta tags provide metadata about the HTML document:</p>
-    <pre><code>&lt;meta charset="UTF-8"&gt;
-&lt;meta name="description" content="Learn HTML"&gt;
-&lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;
-&lt;meta name="author" content="Your Name"&gt;</code></pre>
-    <p>The <code>charset</code> attribute specifies the character encoding for the HTML document. The <code>name</code> and <code>content</code> attributes provide additional metadata.</p>
-    
-    <h2>13. Scripts</h2>
-    <p>Scripts are used to add interactivity to your web pages:</p>
-    <pre><code>&lt;script&gt;
-    function showAlert() {
-        alert("Hello, world!");
-    }
-&lt;/script&gt;
-&lt;button onclick="showAlert()"&gt;Click me&lt;/button&gt;</code></pre>
-    <p>The <code>&lt;script&gt;</code> element is used to define client-side JavaScript. The <code>onclick</code> attribute is used to execute JavaScript when a button is clicked.</p>
-    
-    <h2>14. Canvas</h2>
-    <p>The <code>&lt;canvas&gt;</code> element is used to draw graphics on the fly via JavaScript:</p>
-    <pre><code>&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;
-&lt;script&gt;
-    var canvas = document.getElementById("myCanvas");
-    var ctx = canvas.getContext("2d");
-    ctx.fillStyle = "#FF0000";
-    ctx.fillRect(0, 0, 200, 100);
-&lt;/script&gt;</code></pre>
-    <p>The <code>getContext("2d")</code> method returns a drawing context on the canvas.</p>
-    
-    <h2>15. SVG</h2>
-    <p>SVG (Scalable Vector Graphics) is used to define vector-based graphics:</p>
-    <pre><code>&lt;svg width="100" height="100"&gt;
-    &lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /&gt;
-&lt;/svg&gt;</code></pre>
-    <p>SVG elements and attributes are used to draw shapes like circles, rectangles, and paths.</p>
+    <header>
+        <h1>Welcome to Vortex</h1>
+    </header>
+    <main>
+        <h2>About Us</h2>
+        <p>Vortex is a leading company in innovative solutions. We strive to bring the best products and services to our customers.</p>
+        <h2>Our Mission</h2>
+        <p>Our mission is to revolutionize the industry with cutting-edge technology and unparalleled customer service.</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 Vortex. All rights reserved.</p>
+    </footer>
 </body>
 </html>
