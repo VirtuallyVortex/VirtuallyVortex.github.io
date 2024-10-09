@@ -3,47 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Vortex</title>
+    <title>Vortex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            background: url('https://r2.guns.lol/2729d5d1-4935-4d51-b5ea-7174c4a8e787.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        main {
-            padding: 2rem;
-            text-align: center;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
+
+        .overlay {
             position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            bottom: 0;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1;
+            transition: opacity 0.5s ease;
+        }
+
+        .translucent-box {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+            width: 600px;
+            height: 450px;
+            display: none;
+            position: relative;
+            z-index: 2;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 25px;
+            margin: 10px 0;
+            color: white;
+        }
+
+        h3 {
+            font-size: 16px;
+            color: white;
+            margin: 5px 0;
+        }
+
+        .small-translucent-box {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 15px;
+            width: 260px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            text-align: left;
+            height: 105px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .profile-image {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            position: absolute;
+            left: 10px;
+            bottom: 20px;
+        }
+
+        .discord-username {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            left: 90px;
+            bottom: 53px;
+        }
+
+        .badge-icon {
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+            margin-left: 5px;
+            position: absolute;
+        }
+
+        .badge-icon-1 {
+            left: 125px;
+            bottom: 55px;
+        }
+
+        .badge-icon-2 {
+            left: 150px;
+            bottom: 55px;
+        }
+
+        .badge-icon-3 {
+            left: 173px;
+            bottom: 55px;
+        }
+
+        .badge-icon-4 {
+            left: 200px;
+            bottom: 55px;
+        }
+
+        .badge-icon-5 {
+            left: 225px;
+            bottom: 55px;
+        }
+
+        .spotify-listening {
+            font-size: 16px;
+            color: white;
+            margin-top: -49px;
+            margin-left: 255px;
+            text-align: left;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Vortex</h1>
-    </header>
-    <main>
-        <h2>About Us</h2>
-        <p>Vortex is a leading company in innovative solutions. We strive to bring the best products and services to our customers.</p>
-        <h2>Our Mission</h2>
-        <p>Our mission is to revolutionize the industry with cutting-edge technology and unparalleled customer service.</p>
-    </main>
-    <footer>
-        <p>&copy; 2023 Vortex. All rights reserved.</p>
-    </footer>
+    <audio id="background-audio" src="https://r2.guns.lol/2dec0841-b987-457f-8bbf-ca2bc82e5d36.mp3" preload="auto" loop></audio>
+    
+    <div class="overlay" id="overlay">Click to Enter</div>
+    
+    <div class="translucent-box" id="content">
+        <img src="https://i.ibb.co/rw3W5P8/image.png" alt="Avatar" class="avatar">
+        <h1>Vortex</h1>
+        <h3>I'm either numero uno, or I didn't play. <br></h3>
+
+        <div class="small-translucent-box">
+            <img src="https://i.ibb.co/rw3W5P8/image.png" alt="Profile" class="profile-image">
+            <span class="discord-username">vrtX</span>
+            <img class="badge-icon badge-icon-1" src="https://i.ibb.co/ZdP7gVW/image.png" alt="Badge Icon 1">
+            <img class="badge-icon badge-icon-2" src="https://i.ibb.co/3NDQsLq/image.png" alt="Badge Icon 2">
+            <img class="badge-icon badge-icon-3" src="https://i.ibb.co/FK47Zx3/image.png" alt="Badge Icon 3">
+            <img class="badge-icon badge-icon-4" src="https://i.ibb.co/NFDxtwy/image.png" alt="Badge Icon 4">
+            <img class="badge-icon badge-icon-5" src="https://i.ibb.co/xscVwp2/image.png" alt="Badge Icon 5">
+        </div>
+        <h3 class="spotify-listening">✨#1 Therapist</h3>
+    </div>
+
+    <script>
+        const audio = document.getElementById('background-audio');
+        const overlay = document.getElementById('overlay');
+        const content = document.getElementById('content');
+
+        overlay.addEventListener('click', () => {
+            audio.play().catch(err => {
+                console.log("Audio play failed:", err);
+            });
+
+            overlay.style.opacity = '0';
+            setTimeout(() => {
+                overlay.style.display = 'none';
+                content.style.display = 'block';
+            }, 500);
+        });
+
+        document.body.style.display = 'flex';
+        content.style.display = 'none';
+    </script>
 </body>
 </html>
